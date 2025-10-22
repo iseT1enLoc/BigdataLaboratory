@@ -31,7 +31,7 @@
         <configuration>
             <archive>
             <manifest>
-                <mainClass>com.lab1.bigdata.bai2</mainClass>
+                <mainClass>com.lab1.bigdata.bai3</mainClass>
             </manifest>
             </archive>
         </configuration>
