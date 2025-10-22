@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lab1.bigdata</groupId>
+    <artifactId>lab1bigdata_22520792</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>12</maven.compiler.target>
+    </properties>
+    <build>
+    <plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+            <source>11</source>
+            <target>11</target>
+        </configuration>
+        </plugin>
+
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+            <archive>
+            <manifest>
+                <mainClass>com.lab1.bigdata.bai2</mainClass>
+            </manifest>
+            </archive>
+        </configuration>
+        </plugin>
+    </plugins>
+    </build>
+
+
+    <dependencies>
+    <!-- Hadoop Common -->
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-common</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+
+    <!-- Hadoop HDFS -->
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-hdfs</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+
+    <!-- Hadoop MapReduce Client Core -->
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-mapreduce-client-core</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+
+    <!-- Hadoop MapReduce Client Common -->
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-mapreduce-client-common</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+
+    <!-- Hadoop MapReduce Client JobClient -->
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
+        <version>3.4.1</version>
+    </dependency>
+    </dependencies>
+
+</project>
